@@ -60,3 +60,19 @@ switch (nameComparison) {
   default:
     console.log('What?! You both have the same name?');
 }
+
+/*
+Go to [lorem ipsum generator](http://www.lipsum.com/) and:
+  - Generate 3 paragraphs. Store the text in a variable type of string.
+  - Make your program count the number of words in the string.
+  - Make your program count the number of times the Latin word [`et`](https://en.wiktionary.org/wiki/et#Latin) appears.
+*/
+let para = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed leo vehicula, venenatis sem id, condimentum lacus. Sed et ex lorem. Ut interdum, erat nec mattis ornare, felis tortor lobortis libero, id maximus justo metus non tellus. Sed accumsan purus at purus sollicitudin, vel feugiat leo pharetra. Proin luctus finibus sapien vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id semper mauris, nec dapibus dolor. Donec lorem felis, pharetra ut orci consequat, hendrerit semper odio. Nunc vel mi non ante finibus sagittis vitae in enim. Donec tempus vulputate justo sed semper. Fusce facilisis, dui eget vulputate cursus, nulla odio lacinia lectus, quis semper enim ante suscipit tellus. Quisque in ultrices enim. Morbi gravida dignissim purus, ut egestas lorem auctor a. Sed eros mauris, mattis et tellus id, sodales auctor velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin elit elit, pharetra vel metus sed, aliquet scelerisque nibh. Phasellus tempor, velit a sodales bibendum, urna dui tempor est, id faucibus sem arcu quis velit. Proin ut consequat diam. Suspendisse potenti. Praesent lobortis, odio in feugiat auctor, nisi orci gravida nunc, congue eleifend tortor mauris eget lorem. Suspendisse vehicula mattis nulla vitae vehicula. Sed pharetra dictum diam id lacinia. Donec varius feugiat eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut ex sed metus maximus dapibus non sed lacus. Nam pretium, leo ut mattis semper, dui nibh molestie lorem, sit amet pharetra lectus eros ut magna. Aliquam euismod, lectus a egestas malesuada, risus erat aliquet neque, ac pulvinar eros tellus eget quam. Aenean sed velit erat. Cras efficitur dui ac rhoncus tempus.\n Aliquam accumsan, magna at aliquet consectetur, massa libero ultrices ligula, non fermentum massa augue in eros. Mauris non ullamcorper erat. Ut rutrum justo ut scelerisque pellentesque. Sed tincidunt ligula eget lectus hendrerit commodo. Donec efficitur molestie odio et cursus. Praesent porta, nunc in dapibus luctus, dolor neque scelerisque nunc, at finibus lectus ipsum id est. Sed eu magna consequat, suscipit ipsum in, tempus nisl. Nulla consequat ex efficitur scelerisque viverra. Sed tincidunt ligula ut faucibus pulvinar. Nullam quis nibh mollis, consectetur ipsum id, sodales erat. Nulla interdum volutpat malesuada. Pellentesque ac mattis odio. In a libero et mi sodales imperdiet. Cras at ultrices justo, eget pellentesque turpis. Nam posuere mauris ac arcu auctor viverra. Aliquam fringilla, sem eu lobortis sodales, leo augue bibendum ligula, eget bibendum velit felis quis metus."
+
+let wordCount = 0;
+for (i in para) {
+  if (para[i] === ' ') {
+    wordCount++;
+  }
+}
+console.log(wordCount+1);
